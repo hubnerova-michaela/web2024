@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Mobile Menu */
+
+
+.topnav {
+  display: none; /* Hide the normal menu on mobile */
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white background */
+  z-index: 1000;
+  display: none; /* Initially hide the menu */
+}
+
+.mobile-nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+}
+
+.close-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* Show the mobile menu when the menu is toggled */
+.show-mobile-menu {
+  display: block;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  padding: 10px; /* Adjust padding as needed */
+}
+
+.left-section {
+  flex: 0 0 auto; /* Ensures the left section doesn't grow or shrink */
+}
+
+.center-section {
+  flex: 1; /* Allows the center section to grow and take remaining space */
+  text-align: center; /* Center the h1 element */
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff; /* Adjust as needed */
+  z-index: 1000; /* Ensure the navbar appears above other content */
+  /* Add other styling properties as needed */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*obecne styly*/
+/*.menu-icon {
+  display: block;
+  cursor: pointer;
+}*/
+
+
+
+html {
+  box-sizing: border-box;
+  background-color: white;
+  font-size: 16px;
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+}
+
+/*img {
+  max-width: 100%;
+  height: auto;
+
+}*/
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+footer * {
+  text-align: center;
+}
+
+/*header*/
+
+.navbar{
+  display:flex;
+}
+
+header img {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 10px;
+  left: 10px;
+}
+
+header {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-style: normal;
+  padding: 10px 20px;
+  border-bottom: 1px solid black;
+  position: relative;
+
+}
+
+header h1 {
+  margin-top: 0;
+
+}
+
+
+/*home.html */
+
+.new-release img {
+  width: 40%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.new-release {
+  background-image: url("../assets/fog-background.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 5%;
+}
+
+.new-release h3 .new-release p {
+  color: white;
+  margin: 0;
+  padding:0;
+}
+
+.table-container {
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #000; /* Add border for mobile */
+}
+th, td {
+  padding: 1rem;
+  text-align: left;
+  border: 1px solid #000; /* Add border for mobile */
+  font-size: 1.2rem; /* Adjust font size for mobile */
+}
+th[colspan="2"] {
+  text-align: center;
+  font-size: 1.4rem; /* Adjust font size for mobile */
+  font-weight: bold; /* Make font bold for mobile */
+}
+
+
+/*crescent.html*/
+.series-overview {
+  padding-top: 50px;
+}
+
+.series-overview.crescent {
+  background-color: #346175;
+}
+
+.series-overview.acotar {
+  background-color: #cb5e7f;
+}
+
+.series-overview.tog {
+  background-color: #8c1438;
+}
+
+
+.series-overview p {
+  color: black;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 350;
+  font-style: cursive;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.series-overview img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+
+}
+
+
+.series-books {
+  padding-top: 15px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  
+}
+
+.series-books.crescent {
+  background-color:#b4d8e7;
+
+}
+
+.series-books.acotar {
+  background-color: #f9d2de;
+}
+
+.series-books.tog {
+  background-color: #18587a;
+}
+
+.series-books img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+
+/*acotar.html*/
+
+
+/*tog.html*/
+
+
+
+
+
+
+
+
+
+@media (min-width: 600px) {
+
+.topnav {
+    display: block;
+}
+
+
+
+.menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+
+.dropdown {
+  list-style: none;
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #fff;
+  font-size: 1.5rem;
+}
+
+.dropdown li {
+  position: relative;
+  display: inline-block;
+
+}
+
+li:hover .dropdown {
+  display: block;
+}
+
+.menu li ul li {
+  display: block;
+}
+
+.menu li ul li a {
+  padding: 0.8rem 2rem; /* Adjust padding using rem */
+  color: #333;
+  text-decoration: none;
+  display: block;
+  font-size: 0.9rem; /* Adjust font size using rem */
+}
+
+
+
+
+
+
+  
+}
+
+
+
+
+
+
+
+  /*tabulka*/
+
+  table {
+    width: 80%; /* Adjust as needed */
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    font-size: 1.4rem; /* Adjust font size for PC */
+  }
+  th[colspan="2"] {
+    text-align: center;
+    font-size: 1.6rem; /* Adjust font size for PC */
+    font-weight: bold; /* Make font bold for PC */
+  }
+
+
+  .series-books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .series-books img {
+  margin: 10 px;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  h1{
+    font-size: 4rem;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+
+
+
+}
+
+
