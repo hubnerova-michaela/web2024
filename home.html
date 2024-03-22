@@ -1,183 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
-    <script src="./script.js"></script>
-    <title>Home - Sarah J. Maas</title>
-    <link rel="shortcut icon" href="https://sarahjmaas.com/wp-content/themes/sarahjmaas/images/favicon.png" type="image/x-icon">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./styles/style.css">
+	<script src="./script.js"></script>
+	<title>Home - Sarah J. Maas</title>
+	<link rel="shortcut icon" href="https://sarahjmaas.com/wp-content/themes/sarahjmaas/images/favicon.png"
+		type="image/x-icon">
 </head>
+
 <body>
-    <header id="navbar">
-        <div class="header-top">
-            <div class="left-section">
-                <img src="./assets/hamburger_menu.jpg" class="menu-icon" onclick="toggleMenu()" alt="menu icon">
-            </div>
-            <div class="center-section">
-                <h1>SARAH J. MAAS</h1>
-            </div>
-        </div>
-        <nav class="topnav">
-            <ul class="menu">
-                <li class="current"><a href="home.html"> Home </a></li>
-                <li>Books
-                    <ul class="dropdown">
-                        <li><a href="acotar.html">ACOTAR Series</a></li>
-                        <li><a href="tog.html">TOG Series</a></li>
-                        <li><a href="crescent.html">Crescent City Series</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    
-    <div class="mobile-menu" id="mobileMenu">
-        <div class="close-icon" onclick="toggleMenu()">X</div>
-        <nav class="mobile-nav">
-            <ul>
-                <li><a href="./home.html">HOME</a></li>
-                <li>
-                    <a>BOOKS</a>
-                    <ul class="sub-menu">
-                        <li><a href="acotar.html">- ACOTAR Series</a></li>
-                        <li><a href="tog.html">- TOG Series</a></li>
-                        <li><a href="crescent.html">- Crescent City Series</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">SERVICES</a></li>
-            </ul>
-        </nav>
-    </div>
-    
-    
+	<header id="navbar">
+		<div class="header-top">
+			<div class="left-section">
+				<img src="./assets/hamburger_menu.jpg" class="menu-icon" onclick="toggleMenu()" alt="menu icon">
+			</div>
+			<div class="center-section">
+				<h1>SARAH J. MAAS</h1>
+			</div>
+		</div>
+		<nav class="topnav">
+			<ul class="menu">
+				<li class="current"><a href="home.html"> Home </a></li>
+				<li>Books
+					<ul class="dropdown">
+						<li><a href="acotar.html">ACOTAR Series</a></li>
+						<li><a href="tog.html">TOG Series</a></li>
+						<li><a href="crescent.html">Crescent City Series</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="mobile-menu" id="mobileMenu">
+		<div class="close-icon" onclick="toggleMenu()">X</div>
+		<nav class="mobile-nav">
+			<ul>
+				<li><a href="./home.html">HOME</a></li>
+				<li>
+					<a>BOOKS</a>
+					<ul class="sub-menu">
+						<li><a href="acotar.html">- ACOTAR Series</a></li>
+						<li><a href="tog.html">- TOG Series</a></li>
+						<li><a href="crescent.html">- Crescent City Series</a></li>
+					</ul>
+				</li>
+				<li><a href="#">SERVICES</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<main>
 
 
-    <h2>Newest Releases</h2>
+		<h2>Newest Releases</h2>
 
-    <section  class="new-release">
-        <img src="https://sarahjmaas.com/wp-content/uploads/2023/11/9781635574104_min.jpg" alt="House of Flame and Shadow">
-        <h3>House of Flame and Shadow</h3>
-        <p>The Story of our main characters continues...</p>
-    </section>
- 
-
-
-
-    <h2>About Sarah J Maas</h2>
-
-    <p> Sarah J Maas is the #1 New York Times and internationally bestselling author of the Throne of Glass, Court of Thorns and Roses, and Crescent City series. Her books have sold more than nine million copies and are published in thirty-seven languages. A New York native, Sarah lives in Pennsylvania with her husband, son, and dog. </p>
-    <img src="./assets/sarah.jpg" alt="Sarah J Maas">
-    <p> <a href="https://www.sarahjmaas.com/"> Sarah J. Maas website </a> </p>
-    <p> <a href="https://www.instagram.com/sarahjmaas/"> Sarah J. Maas Instagram </a> </p>
-    <p> <a href="https://www.facebook.com/theworldofsarahjmaas/"> Sarah J. Maas Facebook </a> </p>
-    <p> <a href="https://twitter.com/SJMaas"> Sarah J. Maas Twitter </a> </p>
+		<section class="new-release">
+			<img src="https://sarahjmaas.com/wp-content/uploads/2023/11/9781635574104_min.jpg"
+				alt="House of Flame and Shadow">
+			<h3>House of Flame and Shadow</h3>
+			<p>The Story of our main characters continues...</p>
+		</section>
 
 
-    <form action="web.html" method="post">
-        <fieldset>
-            <legend> Contact me </legend>
-            <label for="name"> Name: </label>
-            <input type="text" id="name" name="name">
-            <label for="email"> Email: </label>
-            <input type="email" id="email" name="email">
-            <label for="message"> Message: </label>
-            <textarea id="message" name="message"></textarea>
-            <input type="submit" value="Send">
-        </fieldset>
-    </form>
-    <div class="table-container">
-    <table>
-        <caption>Sarah J Maas's Books</caption>
-        <tr>
-          <th colspan="2">Series & Title</th>
-        </tr>
-        <tr>
-          <td rowspan="8">Throne of Glass</td>
-          <td>The Assassin's Blade (2012)</td>
-        </tr>
-        <tr>
-          <td>Throne of Glass (2012)</td>
-        </tr>
-        <tr>
-          <td>Crown of Midnight (2013)</td>
-        </tr>
-        <tr>
-          <td>Heir of Fire (2014)</td>
-        </tr>
-        <tr>
-          <td>Queen of Shadows (2015)</td>
-        </tr>
-        <tr>
-          <td>Empire of Storms (2016)</td>
-        </tr>
-        <tr>
-          <td>Tower of Dawn (2017)</td>
-        </tr>
-        <tr>
-          <td>Kingdom of Ash (2018)</td>
-        </tr>
-        <tr>
-          <td rowspan="5">A Court of Thorns and Roses</td>
-          <td>A Court of Thorns and Roses (2015)</td>
-        </tr>
-        <tr>
-          <td>A Court of Mist and Fury (2016)</td>
-        <tr>
-            <td>A Court of Wings and Ruin (2017)</td>
-        </tr>
-        <tr>
-            <td>A Court of Frost and Starlight (2018)</td>
-        </tr>
-        <tr>
-            <td>A Court of Silver Flames (2021)</td>
-        </tr>
-        <tr>
-          <td rowspan="3">Crescent City</td>
-          <td>House of Earth and Blood (2020)</td>
-        </tr>
-        <tr>
-          <td>House of Sky and Breath (2022)</td>
-        </tr>
-        <tr>
-          <td>House of Flame and Shadow (2024)</td>
-        </tr>
-      </table>
-      </div>
-      
 
-    //two level list with series and the books in the series
-    <ul>
-        <li> Throne of Glass
-            <ul>
-                <li> Throne of Glass </li>
-                <li> Crown of Midnight </li>
-                <li> Heir of Fire </li>
-                <li> Queen of Shadows </li>
-                <li> Empire of Storms </li>
-                <li> Tower of Dawn </li>
-                <li> Kingdom of Ash </li>
-            </ul>
-        </li>
-        <li> A Court of Thorns and Roses
-            <ul>
-                <li> A Court of Thorns and Roses </li>
-                <li> A Court of Mist and Fury </li>
-                <li> A Court of Wings and Ruin </li>
-                <li> A Court of Frost and Starlight </li>
-                <li> A Court of Silver Flames </li>
-            </ul>
-        </li>
-        <li> Crescent City
-            <ul>
-                <li> House of Earth and Blood </li>
-                <li> House of Sky and Breath </li>
-            </ul>
-        </li>
-    </ul>
-    <footer>
-        <p> &copy; 2023 Sarah J Maas </p>
-    </footer>
-    
+
+		<h2>About Sarah J Maas</h2>
+
+		<p> Sarah J Maas is the #1 New York Times and internationally bestselling author of the Throne of Glass, Court
+			of Thorns and Roses, and Crescent City series. Her books have sold more than nine million copies and are
+			published in thirty-seven languages. A New York native, Sarah lives in Pennsylvania with her husband, son,
+			and dog. </p>
+		<img src="./assets/sarah.jpg" alt="Sarah J Maas">
+		<p> <a href="https://www.sarahjmaas.com/"> Sarah J. Maas website </a> </p>
+		<p> <a href="https://www.instagram.com/sarahjmaas/"> Sarah J. Maas Instagram </a> </p>
+		<p> <a href="https://www.facebook.com/theworldofsarahjmaas/"> Sarah J. Maas Facebook </a> </p>
+		<p> <a href="https://twitter.com/SJMaas"> Sarah J. Maas Twitter </a> </p>
+
+
+		<form action="web.html" method="post">
+			<fieldset>
+				<legend> Contact me </legend>
+				<label for="name"> Name: </label>
+				<input type="text" id="name" name="name">
+				<label for="email"> Email: </label>
+				<input type="email" id="email" name="email">
+				<label for="message"> Message: </label>
+				<textarea id="message" name="message"></textarea>
+				<input type="submit" value="Send">
+			</fieldset>
+		</form>
+		<div class="table-container">
+			<table>
+				<caption>Sarah J Maas's Books</caption>
+				<tr>
+					<th colspan="2">Series & Title</th>
+				</tr>
+				<tr>
+					<td rowspan="8">Throne of Glass</td>
+					<td>The Assassin's Blade (2012)</td>
+				</tr>
+				<tr>
+					<td>Throne of Glass (2012)</td>
+				</tr>
+				<tr>
+					<td>Crown of Midnight (2013)</td>
+				</tr>
+				<tr>
+					<td>Heir of Fire (2014)</td>
+				</tr>
+				<tr>
+					<td>Queen of Shadows (2015)</td>
+				</tr>
+				<tr>
+					<td>Empire of Storms (2016)</td>
+				</tr>
+				<tr>
+					<td>Tower of Dawn (2017)</td>
+				</tr>
+				<tr>
+					<td>Kingdom of Ash (2018)</td>
+				</tr>
+				<tr>
+					<td rowspan="5">A Court of Thorns and Roses</td>
+					<td>A Court of Thorns and Roses (2015)</td>
+				</tr>
+				<tr>
+					<td>A Court of Mist and Fury (2016)</td>
+				<tr>
+					<td>A Court of Wings and Ruin (2017)</td>
+				</tr>
+				<tr>
+					<td>A Court of Frost and Starlight (2018)</td>
+				</tr>
+				<tr>
+					<td>A Court of Silver Flames (2021)</td>
+				</tr>
+				<tr>
+					<td rowspan="3">Crescent City</td>
+					<td>House of Earth and Blood (2020)</td>
+				</tr>
+				<tr>
+					<td>House of Sky and Breath (2022)</td>
+				</tr>
+				<tr>
+					<td>House of Flame and Shadow (2024)</td>
+				</tr>
+			</table>
+		</div>
+
+
+		//two level list with series and the books in the series
+		<ul>
+			<li> Throne of Glass
+				<ul>
+					<li> Throne of Glass </li>
+					<li> Crown of Midnight </li>
+					<li> Heir of Fire </li>
+					<li> Queen of Shadows </li>
+					<li> Empire of Storms </li>
+					<li> Tower of Dawn </li>
+					<li> Kingdom of Ash </li>
+				</ul>
+			</li>
+			<li> A Court of Thorns and Roses
+				<ul>
+					<li> A Court of Thorns and Roses </li>
+					<li> A Court of Mist and Fury </li>
+					<li> A Court of Wings and Ruin </li>
+					<li> A Court of Frost and Starlight </li>
+					<li> A Court of Silver Flames </li>
+				</ul>
+			</li>
+			<li> Crescent City
+				<ul>
+					<li> House of Earth and Blood </li>
+					<li> House of Sky and Breath </li>
+				</ul>
+			</li>
+		</ul>
+	</main>
+	<footer>
+		<p> &copy; 2023 Sarah J Maas </p>
+	</footer>
+
 </body>
+
 </html>
