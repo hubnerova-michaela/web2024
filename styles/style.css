@@ -81,6 +81,98 @@ main {
 }
 
 
+form {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+label,
+input,
+textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  width: 100%;
+}
+
+
+
+.about-sarah-j-maas {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-sarah-j-maas .info {
+  text-align: justify;
+}
+
+.about-sarah-j-maas p {
+  text-align: center;
+}
+
+
+.about-sarah-j-maas a {
+  text-align: center;
+  text-decoration: none;
+  color: #007bff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mobile-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-nav ul li {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.mobile-nav ul li a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+.mobile-nav ul li:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.mobile-nav ul ul {
+  display: block;
+  padding-left: 20px;
+}
+
+.mobile-nav ul ul li {
+  margin-bottom: 5px;
+}
+
+.mobile-nav ul ul li a {
+  color: black;
+  text-decoration: none;
+}
 
 
 
@@ -103,19 +195,16 @@ main {
 
 
 
+.new-release p,
+.new-release h3 {
+  color: #c55928;
+}
 
+img {
+  max-width: 80%;
+  height: auto;
 
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
