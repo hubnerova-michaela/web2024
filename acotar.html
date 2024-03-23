@@ -37,6 +37,7 @@
 
     <div class="mobile-menu" id="mobileMenu">
         <div class="close-icon" onclick="toggleMenu()">X</div>
+        <img src="./assets/mobile-menu-sarah-logo.jpg" alt="Logo in mobile menu">
         <nav class="mobile-nav">
             <ul>
                 <li><a href="./home.html">Home</a></li>
@@ -57,14 +58,14 @@
 
 
     <main>
-        <section class="series-overview acotar">
+        <div class="series-overview acotar">
             <img src="./assets/acotar.svg" alt="A Court of Thorns and Roses">
             <p>Feyre is a huntress. She thinks nothing of slaughtering a wolf to capture its prey. But, like all
                 mortals, she fears what lingers beyond the forest. And she will learn that taking the life of a magical
                 creature comes at a high price . . .</p>
 
-        </section>
-        <section class="series-books acotar">
+        </div>
+        <div class="series-books acotar">
             <img src="./assets/ACOTAR_1-min.jpg" alt="A Court of Thorns and Roses">
             <p>A COURT OF THORNS AND ROSES</p>
             <img src="./assets/ACOMAF_2-min.jpg" alt="A Court of Mist and Fury">
@@ -75,7 +76,17 @@
             <p>A COURT OF FROST AND STARLIGHT</p>
             <img src="./assets/ACOSF_5-min.jpg" alt="A Court of Silver Flames">
             <p>A COURT OF SILVER FLAMES</p>
-        </section>
+        </div>
+        <div class="audiobook">
+            <h3>Listen to the audio book snippet</h3>
+            <audio preload="auto" controls>
+                <source src="./assets/acotar.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+            <a href="https://www.audible.com/pd/A-Court-of-Thorns-and-Roses-Audiobook/B07954V87J?ref_pageloadid=not_applicable&ref=a_series_A-_c5_lProduct_1_1&pf_rd_p=284b47b1-a5db-4711-9667-612f2ac7458e&pf_rd_r=4GN3STWSSC3FR3DTTDB9&pageLoadId=DJS3jMedXuKPRTlL&creativeId=b570234c-250a-43ff-be6b-ca1b4c5d7caa"
+                target="_blank">
+                <button>Buy the audiobook</button>
+        </div>
         <h3>Characters</h3>
         <ul>
             <li>Feyre Archeron</li>
@@ -89,7 +100,6 @@
             <li>Morrigan</li>
             <li>Amren</li>
         </ul>
-        </div>
     </main>
     <footer>
         <p> &copy; 2023 Sarah J Maas </p>

@@ -1,10 +1,18 @@
 function toggleMenu() {
-    var mobileMenu = document.getElementById("mobileMenu");
-    mobileMenu.classList.toggle("show-mobile-menu");
+  var mobileMenu = document.getElementById("mobileMenu");
+  mobileMenu.classList.toggle("show-mobile-menu");
+  var body = document.body;
+  if (mobileMenu.classList.contains("show-mobile-menu")) {
+    body.classList.add("non-scrollable");
+  }
+  else {
+    body.classList.remove("non-scrollable");
+  }
+
 }
 
 
-window.onscroll = function() {stickyNavbar()};
+window.onscroll = function () { stickyNavbar() };
 
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;

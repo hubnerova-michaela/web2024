@@ -1,19 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+@font-face {
+  font-family: 'Cormorant Garamond', serif;
+  src: url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+}
+
 html {
   max-width: 100vw;
 }
 
 main {
-  margin-top: 100px;
+  margin-top: 79px;
 }
-
-/* Mobile Menu */
-
 
 .topnav {
   display: none;
-  /* Hide the normal menu on mobile */
 }
 
 .mobile-menu {
@@ -22,27 +23,39 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.95);
-  /* Semi-transparent white background */
+  background-color: rgba(255, 255, 255);
   z-index: 1000;
   display: none;
-  /* Initially hide the menu */
 }
 
 .mobile-nav {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 40%;
+  left: 40%;
   transform: translate(-50%, -50%);
   padding: 20px;
 }
 
 .close-icon {
   position: absolute;
-  top: 20px;
+  top: 25px;
+  left: 20px;
+  font-size: 1.8rem;
+}
+
+.mobile-menu img {
+  position: absolute;
+  top: 25px;
   right: 20px;
-  cursor: pointer;
-  font-size: 24px;
+  width: 40px;
+  height: 40px;
+
+}
+
+.non-scrollable {
+  overflow: hidden;
+  /* Prevent scrolling when the mobile menu is open */
+
 }
 
 /* Show the mobile menu when the menu is toggled */
@@ -80,11 +93,31 @@ main {
   /* Add other styling properties as needed */
 }
 
+fieldset {
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-style: dashed;
+
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
 
 form {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+label {
+  font-weight: bold;
 }
 
 label,
@@ -95,15 +128,31 @@ textarea {
   margin-bottom: 10px;
 }
 
-input[type="submit"] {
-  width: 100%;
+input,
+textarea {
+  border-radius: 5px;
+}
+
+.mysubmitbutton {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  background-color: rgb(207, 207, 207);
+  border: none;
+  border-radius: 10px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.1rem;
 }
 
 
 
 .about-sarah-j-maas {
   max-width: 600px;
-  margin: 20px auto;
+  margin-bottom: 20px;
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
@@ -134,8 +183,11 @@ input[type="submit"] {
 
 
 
+.mobile-nav {
+  font-size: 1.4rem;
+  text-align: left;
 
-
+}
 
 .mobile-nav ul {
   list-style: none;
@@ -155,14 +207,11 @@ input[type="submit"] {
   padding: 10px;
 }
 
-.mobile-nav ul li:hover {
-  background-color: #555;
-  border-radius: 5px;
-}
 
 .mobile-nav ul ul {
   display: block;
-  padding-left: 20px;
+  padding-left: 40px;
+  list-style: circle;
 }
 
 .mobile-nav ul ul li {
@@ -171,7 +220,7 @@ input[type="submit"] {
 
 .mobile-nav ul ul li a {
   color: black;
-  text-decoration: none;
+  text-decoration: ;
 }
 
 
@@ -189,20 +238,33 @@ input[type="submit"] {
 
 
 
-
-
-
-
-
-
-.new-release p,
-.new-release h3 {
-  color: #c55928;
-}
 
 img {
   max-width: 80%;
   height: auto;
+
+}
+
+
+audio {
+  margin: auto;
+  display: flex;
+  justify-self: start;
+}
+
+.audiobook button {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  background-color: rgb(207, 207, 207);
+  border: none;
+  border-radius: 10px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.1rem;
 
 }
 
@@ -213,6 +275,11 @@ img {
 .menu-icon {
   display: block;
   cursor: pointer;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 20px;
+  left: 10px;
 }
 
 
@@ -225,20 +292,16 @@ html {
 
 h2,
 h3 {
+  margin-top: 10px;
   text-align: center;
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Cormorant Garamond", serif;
   color: #333;
   margin: 0;
 }
 
-/*img {
-  max-width: 100%;
-  height: auto;
-
-}*/
 
 p {
   font-size: 16px;
@@ -266,16 +329,8 @@ footer * {
   display: flex;
 }
 
-header img {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  top: 10px;
-  left: 10px;
-}
-
 header {
-  font-family: "Cormorant Garamond", serif;
+  /* font-family: "Cormorant Garamond", serif; */
   font-weight: 500;
   font-style: normal;
   padding: 10px 20px;
@@ -285,7 +340,7 @@ header {
 }
 
 header h1 {
-  margin-top: 0;
+  margin: 0;
 
 }
 
@@ -308,10 +363,12 @@ header h1 {
   padding: 5%;
 }
 
-.new-release h3 .new-release p {
-  color: white;
-  margin: 0;
-  padding: 0;
+
+
+.new-release h3,
+.new-release p {
+  color: #c55928;
+  text-align: center;
 }
 
 .table-container {
@@ -332,13 +389,13 @@ td {
   text-align: left;
   border: 1px solid #000;
   /* Add border for mobile */
-  font-size: 1.2rem;
+  font-size: 1rem;
   /* Adjust font size for mobile */
 }
 
 th[colspan="2"] {
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1rem;
   /* Adjust font size for mobile */
   font-weight: bold;
   /* Make font bold for mobile */
@@ -365,9 +422,9 @@ th[colspan="2"] {
 
 .series-overview p {
   color: black;
-  font-family: "Cormorant Garamond", serif;
+  /* font-family: "Cormorant Garamond", serif; */
   font-weight: 350;
-  font-style: cursive;
+  font-style: italic;
   padding: 10px;
   text-align: center;
   margin-bottom: 0;
@@ -385,7 +442,7 @@ th[colspan="2"] {
 
 .series-books {
   padding-top: 15px;
-  font-family: "Cormorant Garamond", serif;
+  /* font-family: "Cormorant Garamond", serif; */
   font-weight: 500;
   font-style: normal;
   text-align: center;
@@ -410,10 +467,19 @@ th[colspan="2"] {
 
 }
 
-/*acotar.html*/
 
 
-/*tog.html*/
+
+
+
+
+
+
+
+
+
+
+
 
 
 
