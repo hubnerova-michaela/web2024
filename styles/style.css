@@ -5,12 +5,17 @@
   src: url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   max-width: 100vw;
 }
 
+
 main {
-  margin-top: 79px;
+  margin-top: 80px;
 }
 
 .topnav {
@@ -91,6 +96,7 @@ main {
   z-index: 1000;
   /* Ensure the navbar appears above other content */
   /* Add other styling properties as needed */
+  box-sizing: border-box;
 }
 
 fieldset {
@@ -151,9 +157,7 @@ textarea {
 
 
 .about-sarah-j-maas {
-  max-width: 600px;
   margin-bottom: 20px;
-  padding: 20px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -220,7 +224,6 @@ textarea {
 
 .mobile-nav ul ul li a {
   color: black;
-  text-decoration: ;
 }
 
 
@@ -245,6 +248,19 @@ img {
 
 }
 
+.audiobook {
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.audiobook img {
+  position: relative;
+  height: 12rem;
+  border-radius: 2rem;
+}
+
 
 audio {
   margin: auto;
@@ -254,7 +270,6 @@ audio {
 
 .audiobook button {
   display: flex;
-  width: 50%;
   justify-content: center;
   margin-top: 20px;
   margin-left: auto;
@@ -327,6 +342,8 @@ footer * {
 
 .navbar {
   display: flex;
+  left: 0;
+  right: 0;
 }
 
 header {
@@ -353,6 +370,7 @@ header h1 {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
 
 }
 
@@ -360,8 +378,17 @@ header h1 {
   background-image: url("../assets/fog-background.jpg");
   background-size: cover;
   background-position: center;
+  backdrop-filter: blur(100px);
   padding: 5%;
+  height: 45vh;
+  font-size: 1.1rem;
+
 }
+
+.new-release p {
+  font-size: 1rem;
+}
+
 
 
 
@@ -371,13 +398,32 @@ header h1 {
   text-align: center;
 }
 
-.table-container {
-  overflow-x: auto;
-  /* Enable horizontal scrolling */
+.only-you-can-decide {
+  background-color: #f9d2de;
+  padding: 5%;
+  height: 45vh;
+
 }
+
+.only-you-can-decide p,
+.only-you-can-decide a {
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 10px;
+  display: block;
+
+
+}
+
+.only-you-can-decide h2 {
+  margin-top: 10%;
+  font-size: 1.7rem;
+}
+
 
 table {
   width: 100%;
+  margin-left: 0;
   border-collapse: collapse;
   border: 1px solid #000;
   /* Add border for mobile */
@@ -401,6 +447,12 @@ th[colspan="2"] {
   /* Make font bold for mobile */
 }
 
+.table-container .series-list {
+  width: 100%;
+  font-size: 1.2rem;
+  /* Adjust font size for mobile */
+}
+
 
 /*crescent.html*/
 .series-overview {
@@ -413,6 +465,27 @@ th[colspan="2"] {
 
 .series-overview.acotar {
   background-color: #cb5e7f;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.series-overview img {
+  animation: fadeIn 1s;
+}
+
+.series-overview p {
+  animation: fadeIn 1s;
+
 }
 
 .series-overview.tog {
@@ -439,6 +512,10 @@ th[colspan="2"] {
 
 }
 
+.tog p {
+  color: #fff;
+}
+
 
 .series-books {
   padding-top: 15px;
@@ -457,6 +534,7 @@ th[colspan="2"] {
 .series-books.acotar {
   background-color: #f9d2de;
 }
+
 
 .series-books.tog {
   background-color: #18587a;
@@ -491,55 +569,177 @@ th[colspan="2"] {
 
 @media (min-width: 600px) {
 
+  /* Resetting default margin and padding */
+
   .topnav {
     display: block;
+    font-size: 1.4rem;
   }
 
+  .menu li.current {
+    text-decoration: underline;
+  }
 
+  /* Resetting default margin and padding */
+  body,
+  ul {
+    margin: 0;
+    padding: 0;
+  }
 
-  .menu {
+  /* Styling the header */
+  header {
+    padding: 10px 20px;
+    text-align: center;
+    /* Aligning h1 to center */
+  }
+
+  /* Styling the site title */
+  header h1 {
+    font-size: 4rem;
+    margin: 0;
+  }
+
+  /* Styling the navbar */
+  #navbar {
+    padding: 10px 20px;
+  }
+
+  #navbar.sticky {
+    top: -20px;
+    /* adjust this value based on your header height */
+  }
+
+  .header-top {
     display: flex;
     justify-content: center;
-    list-style: none;
     align-items: center;
-    font-size: 1.5rem;
   }
 
+  /* Styling the menu icon */
+  .menu-icon {
+    width: 30px;
+    cursor: pointer;
+  }
 
-  .dropdown {
+  /* Styling the navigation links */
+  .topnav ul.menu {
     list-style: none;
-    display: none;
-    position: absolute;
-    top: 100%;
-    background-color: #fff;
-    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .dropdown li {
+  .topnav ul.menu li {
     position: relative;
-    display: inline-block;
-
+    padding: 10px
   }
 
-  li:hover .dropdown {
-    display: block;
-  }
-
-  .menu li ul li {
-    display: block;
-  }
-
-  .menu li ul li a {
-    padding: 0.8rem 2rem;
-    /* Adjust padding using rem */
-    color: #333;
+  .topnav ul.menu li a {
     text-decoration: none;
     display: block;
-    font-size: 0.9rem;
-    /* Adjust font size using rem */
+    color: #000;
+  }
+
+  /* Styling the dropdown menu */
+  .topnav ul.menu li ul.dropdown {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    top: 100%;
+    left: 0;
+    width: 200px;
+
+  }
+
+  .topnav ul.menu li:hover ul.dropdown {
+    display: block;
+    background-color: #fff;
+    border: #333;
+    cursor: context-menu;
+  }
+
+  .topnav ul.menu li ul.dropdown li {
+    margin: 5px 0;
+  }
+
+  .topnav ul.menu li ul.dropdown li a {
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    color: #000;
+  }
+
+  .home-flexbox {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+
+  .about-sarah-j-maas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .bio {
+    width: 50%;
+    float: left;
+    padding: 1.2rem;
+  }
+
+  .about-sarah-j-maas img {
+    width: 50%;
+    height: auto;
+    float: left;
   }
 
 
+  .new-release {
+    width: 50%;
+    height: auto;
+  }
+
+  .only-you-can-decide {
+    width: 50%;
+    height: inherit;
+  }
+
+  .img-and-caption {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+    width: 30%;
+  }
+
+  /* Styling the current page indicator */
+
+  .series-overview {
+    padding-bottom: 50px;
+  }
+
+  .series-overview img {
+    width: 20%;
+
+  }
+
+  .series-overview p {
+    font-size: 1.6rem;
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+
+  .series-books img:hover {
+    transform: scale(1.05, 1.05);
+  }
+
+
+  form {
+    width: 50%;
+  }
 
 
 
@@ -547,12 +747,26 @@ th[colspan="2"] {
     display: none;
   }
 
+  .table-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+  }
+
 
   table {
-    width: 80%;
+    width: 70%;
+    float: left;
     /* Adjust as needed */
-    margin: 0 auto;
     border-collapse: collapse;
+
+  }
+
+  .table-container .series-list {
+    width: 30%;
+    float: left;
+    font-size: 1.4rem;
   }
 
   th,
@@ -576,10 +790,13 @@ th[colspan="2"] {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 40px;
   }
 
   .series-books img {
     margin: 10 px;
+    display: flex;
+
   }
 
 
@@ -589,12 +806,21 @@ th[colspan="2"] {
     margin-top: 10px;
   }
 
+  main {
+    margin-top: 155px;
+  }
+
+
+  /* svg {
+    width: 1.2rem;
+  } */
+
+  .new-release {
+    font-size: 1.6rem;
+  }
+
+  .new-release p {
+    font-size: 1.3rem;
+  }
+
 }
-
-
-
-
-
-
-
-/*tabulka*/
