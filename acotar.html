@@ -18,12 +18,14 @@
                 <img src="./assets/hamburger_menu.jpg" class="menu-icon" onclick="toggleMenu()" alt="menu icon">
             </div>
             <div class="center-section">
-                <h1>SARAH J. MAAS</h1>
+                <a href="./index.html">
+                    <h1>SARAH J. MAAS</h1>
+                </a>
             </div>
         </div>
         <nav class="topnav">
             <ul class="menu">
-                <li><a href="home.html">HOME</a></li>
+                <li><a href="index.html">HOME</a></li>
                 <li class="current">BOOKS
                     <ul class="dropdown">
                         <li><a href="acotar.html">ACOTAR SERIES</a></li>
@@ -40,7 +42,7 @@
         <img src="./assets/mobile-menu-sarah-logo.jpg" alt="Logo in mobile menu">
         <nav class="mobile-nav">
             <ul>
-                <li><a href="./home.html">Home</a></li>
+                <li><a href="./index.html">Home</a></li>
                 <li><a>Books</a>
                     <ul>
                         <li><a href="acotar.html">ACOTAR Series</a></li>
@@ -58,44 +60,95 @@
 
     <main>
         <div class="series-overview acotar">
-            <img src="./assets/acotar.svg" alt="A Court of Thorns and Roses">
+            <a href="#characters"><img src="./assets/acotar.svg" alt="A Court of Thorns and Roses"></a>
             <p>Feyre is a huntress. She thinks nothing of slaughtering a wolf to capture its prey. But, like all
                 mortals, she fears what lingers beyond the forest. And she will learn that taking the life of a magical
                 creature comes at a high price . . .</p>
 
         </div>
-        <div class="series-books acotar">
-            <div class="img-and-caption">
-                <img src="./assets/ACOTAR_1-min.jpg" alt="A Court of Thorns and Roses">
-                <p>A COURT OF THORNS AND ROSES</p>
+        <div class="background acotar">
+            <h2>Books</h2>
+            <div class="series-books acotar">
+                <div class="img-and-caption">
+                    <img src="./assets/ACOTAR_1-min.jpg" alt="A Court of Thorns and Roses">
+                    <p>A COURT OF THORNS AND ROSES</p>
+                </div>
+                <div class="img-and-caption">
+                    <img src="./assets/ACOMAF_2-min.jpg" alt="A Court of Mist and Fury">
+                    <p>A COURT OF MIST AND FURY</p>
+                </div>
+                <div class="img-and-caption">
+                    <img src="./assets/ACOWAR_3-min.jpg" alt="A Court of Wings and Ruin">
+                    <p>A COURT OF WINGS AND RUIN</p>
+                </div>
+                <div class="img-and-caption">
+                    <img src="./assets/ACOFAS_4-min.jpg" alt="A Court of Frost and Starlight">
+                    <p>A COURT OF FROST AND STARLIGHT</p>
+                </div>
+                <div class="img-and-caption">
+                    <img src="./assets/ACOSF_5-min.jpg" alt="A Court of Silver Flames">
+                    <p>A COURT OF SILVER FLAMES</p>
+                </div>
             </div>
-            <div class="img-and-caption">
-                <img src="./assets/ACOMAF_2-min.jpg" alt="A Court of Mist and Fury">
-                <p>A COURT OF MIST AND FURY</p>
+            <h2>Extras</h2>
+            <div class="extras">
+                <div class="video-container">
+                    <video src="./assets/The_Dark_ARCANA.mp4" controls></video>
+                </div>
+                <div class="audiobook">
+                    <img src="./assets/acotar-audiobook.jpg" alt="acotar audiobook">
+                    <h3>Listen to the audiobook snippet</h3>
+                    <audio preload="auto" controls>
+                        <source src="./assets/acotar.mp3" type="audio/mpeg">
+                        Your browser does not support the audio tag.
+                    </audio>
+                    <button>Buy the audiobook</button>
+                </div>
             </div>
-            <div class="img-and-caption">
-                <img src="./assets/ACOWAR_3-min.jpg" alt="A Court of Wings and Ruin">
-                <p>A COURT OF WINGS AND RUIN</p>
-            </div>
-            <div class="img-and-caption">
-                <img src="./assets/ACOFAS_4-min.jpg" alt="A Court of Frost and Starlight">
-                <p>A COURT OF FROST AND STARLIGHT</p>
-            </div>
-            <div class="img-and-caption">
-                <img src="./assets/ACOSF_5-min.jpg" alt="A Court of Silver Flames">
-                <p>A COURT OF SILVER FLAMES</p>
-            </div>
-        </div>
-        <div class="audiobook">
-            <img src="./assets/acotar-audiobook.jpg" alt="acotar audiobook">
-            <h3>Listen to the audiobook snippet</h3>
-            <audio preload="auto" controls>
-                <source src="./assets/acotar.mp3" type="audio/mpeg">
-                Your browser does not support the audio tag.
-            </audio>
-            <a href="https://www.audible.com/pd/A-Court-of-Thorns-and-Roses-Audiobook/B07954V87J?ref_pageloadid=not_applicable&ref=a_series_A-_c5_lProduct_1_1&pf_rd_p=284b47b1-a5db-4711-9667-612f2ac7458e&pf_rd_r=4GN3STWSSC3FR3DTTDB9&pageLoadId=DJS3jMedXuKPRTlL&creativeId=b570234c-250a-43ff-be6b-ca1b4c5d7caa"
-                target="_blank">
-                <button>Buy the audiobook</button>
+
+            <h2 id="characters">Characters</h2>
+            <ul class="characters">
+                <li>Spring Court<ul>
+                        <li>Tamlin</li>
+                        <li>Lucien</li>
+                    </ul>
+                </li>
+                <li>Night Court<ul>
+                        <li>Rhysand</li>
+                        <li>Morrigan</li>
+                        <li>Cassian</li>
+                        <li>Amren</li>
+                        <li>Azriel</li>
+                    </ul>
+                </li>
+                <li>Dawn Court<ul>
+                        <li>Thesan</li>
+                    </ul>
+                </li>
+                <li>Winter Court<ul>
+                        <li>Kallias</li>
+                    </ul>
+                </li>
+                <li>Day Court<ul>
+                        <li>Helion</li>
+                    </ul>
+                </li>
+                <li>Autumn Court<ul>
+                        <li>Beron</li>
+                        <li>Eris</li>
+                    </ul>
+                </li>
+                <li>Summer Court<ul>
+                        <li>Varian</li>
+                    </ul>
+                </li>
+                <li>Mortal Realms <ul>
+                        <li>Nesta</li>
+                        <li>Elain</li>
+                        <li>Feyre</li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </main>
     <footer>

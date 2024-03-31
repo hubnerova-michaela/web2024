@@ -11,32 +11,6 @@ function toggleMenu() {
 
 }
 
-// if (window.innerWidth >= 600) {
-//   window.onscroll = scrollFunction;
-// } else {
-//   window.onscroll = stickyNavbar;
-// }
-
-// window.onresize = function () {
-//   if (window.innerWidth >= 600) {
-//     window.onscroll = scrollFunction;
-//   } else {
-//     window.onscroll = stickyNavbar;
-//   }
-
-
-// window.onscroll = function () { stickyNavbar() };
-
-// var navbar = document.getElementById("navbar");
-// var sticky = navbar.offsetTop;
-
-// function stickyNavbar() {
-//   if (window.pageYOffset >= sticky) {
-//     navbar.classList.add("sticky");
-//   } else {
-//     navbar.classList.remove("sticky");
-//   }
-// }
 
 
 window.onscroll = function () { scrollFunction() };
